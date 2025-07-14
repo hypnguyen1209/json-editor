@@ -2,6 +2,16 @@
 
 A modern, feature-rich JSON data visualization and manipulation tool built with Vue 3, TypeScript, and D3.js. Process and visualize JSON, YAML, CSV, XML, and TOML data with interactive visualizations, all running locally in your browser.
 
+## 📸 Demo
+
+![JSON Editor Demo](demo.jpg)
+
+*Interactive JSON visualization with tree, card, and graph views*
+
+🌐 **[Try Live Demo](https://hypnguyen1209.github.io/json-editor/)** | 📦 **[Download Latest Release](https://github.com/hypnguyen1209/json-editor/releases/latest)**
+
+## 🏷️ Tech Stack
+
 ![JSON Editor](https://img.shields.io/badge/Vue.js-3.4.15-4FC08D?style=flat&logo=vue.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.0.4-646CFF?style=flat&logo=vite&logoColor=white)
