@@ -218,6 +218,17 @@ json-editor/
 - **URL**: Accessible at `https://hypnguyen1209.github.io/json-editor/`
 - **Auto-Deploy**: Every commit to main triggers deployment
 
+**⚠️ GitHub Pages Setup Required:**
+1. Go to your repository Settings → Pages
+2. Under "Source", select "GitHub Actions"
+3. Save the settings
+4. The workflow will automatically deploy on next push
+
+**Alternative Deployment** (if Pages API fails):
+- Use `.github/workflows/deploy-pages-alt.yml`
+- Uses `peaceiris/actions-gh-pages` action
+- Automatically creates `gh-pages` branch
+
 ### Creating a Release
 1. **Automatic** (Recommended):
    ```bash

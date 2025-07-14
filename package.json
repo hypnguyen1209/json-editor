@@ -1,7 +1,7 @@
 {
     "name": "json-visualizer",
     "private": true,
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Interactive JSON data visualization and manipulation tool",
     "type": "module",
     "engines": {
