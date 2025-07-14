@@ -8,7 +8,7 @@ A modern, feature-rich JSON data visualization and manipulation tool built with 
 
 *Interactive JSON visualization with tree, card, and graph views*
 
-🌐 **[Try Live Demo](https://hypnguyen1209.github.io/json-editor/)** | 📦 **[Download Latest Release](https://github.com/hypnguyen1209/json-editor/releases/latest)**
+🌐 **[Try Live Demo](https://mew.js.cool/json-editor/)** | 📦 **[Download Latest Release](https://github.com/hypnguyen1209/json-editor/releases/latest)**
 
 ## 🏷️ Tech Stack
 
