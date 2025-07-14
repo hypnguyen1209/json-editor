@@ -8,7 +8,10 @@
         "dev": "vite --host",
         "build": "vue-tsc && vite build",
         "preview": "vite preview",
-        "type-check": "vue-tsc --noEmit"
+        "type-check": "vue-tsc --noEmit",
+        "release": "npm run build && npm version patch && git push && git push --tags",
+        "release:minor": "npm run build && npm version minor && git push && git push --tags",
+        "release:major": "npm run build && npm version major && git push && git push --tags"
     },
     "dependencies": {
         "@guolao/vue-monaco-editor": "^1.5.5",

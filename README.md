@@ -186,11 +186,57 @@ json-editor/
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build locally
 - `npm run type-check` - Run TypeScript type checking
+- `npm run release` - Create patch release (auto-increment version)
+- `npm run release:minor` - Create minor release
+- `npm run release:major` - Create major release
 
 ### Environment Setup
 - **Node.js**: Version 16 or higher recommended
 - **Package Manager**: npm or yarn
 - **Browser**: Modern browsers with ES2020 support
+
+### GitHub Actions Workflows
+
+#### 🚀 Continuous Integration (CI)
+**File**: `.github/workflows/ci.yml`
+- **Trigger**: Push to main/develop, Pull Requests
+- **Actions**: Install dependencies, type checking, build
+- **Matrix**: Tests on Node.js 16.x, 18.x, 20.x
+- **Artifacts**: Uploads built files for review
+
+#### 📦 Build and Release
+**File**: `.github/workflows/build-and-release.yml`
+- **Trigger**: Version tags (v1.0.0, v2.1.3, etc.) or manual dispatch
+- **Actions**: Build project, create zip archive, GitHub release
+- **Output**: `json-editor-dist.zip` attached to release
+- **Usage**: Perfect for distributing standalone builds
+
+#### 🌐 Deploy to GitHub Pages
+**File**: `.github/workflows/deploy-pages.yml`
+- **Trigger**: Push to main branch or manual dispatch
+- **Actions**: Build and deploy to GitHub Pages
+- **URL**: Accessible at `https://hypnguyen1209.github.io/json-editor/`
+- **Auto-Deploy**: Every commit to main triggers deployment
+
+### Creating a Release
+1. **Automatic** (Recommended):
+   ```bash
+   npm run release        # Patch version (1.0.0 → 1.0.1)
+   npm run release:minor  # Minor version (1.0.0 → 1.1.0)
+   npm run release:major  # Major version (1.0.0 → 2.0.0)
+   ```
+
+2. **Manual**:
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+
+3. **GitHub Actions will automatically**:
+   - Build the production version
+   - Create a zip file of the dist folder
+   - Create a GitHub release with changelog
+   - Attach the zip file as a downloadable asset
 
 ## 🤝 Contributing
 
