@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- White background -->
+  <rect width="32" height="32" fill="#ffffff" rx="4" ry="4"/>
+  
+  <!-- Border for definition -->
+  <rect width="32" height="32" fill="none" stroke="#e1e5e9" stroke-width="1" rx="4" ry="4"/>
+  
+  <!-- Bold curly braces {} -->
+  <text x="16" y="22" font-family="Monaco, 'SF Mono', 'Cascadia Code', monospace" font-size="18" font-weight="900" text-anchor="middle" fill="#0969da">{}</text>
+</svg>
