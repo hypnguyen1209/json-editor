@@ -4,6 +4,10 @@
     "version": "1.0.1",
     "description": "Interactive JSON data visualization and manipulation tool",
     "type": "module",
+    "engines": {
+        "node": ">=22.0.0",
+        "npm": ">=10.0.0"
+    },
     "scripts": {
         "dev": "vite --host",
         "build": "vue-tsc && vite build",

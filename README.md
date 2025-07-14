@@ -191,7 +191,7 @@ json-editor/
 - `npm run release:major` - Create major release
 
 ### Environment Setup
-- **Node.js**: Version 16 or higher recommended
+- **Node.js**: Version 22 or higher required
 - **Package Manager**: npm or yarn
 - **Browser**: Modern browsers with ES2020 support
 
@@ -201,7 +201,7 @@ json-editor/
 **File**: `.github/workflows/ci.yml`
 - **Trigger**: Push to main/develop, Pull Requests
 - **Actions**: Install dependencies, type checking, build
-- **Matrix**: Tests on Node.js 16.x, 18.x, 20.x
+- **Node.js**: v22 (latest LTS)
 - **Artifacts**: Uploads built files for review
 
 #### 📦 Build and Release
